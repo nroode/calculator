@@ -108,13 +108,13 @@ function calculate( input1, operator, input2 ) {
     input2 = display;
 
     if (operator === 'add') {
-        display = parseInt(input1) + parseInt(input2);
+        display = parseFloat(input1) + parseFloat(input2);
     } else if (operator === 'subtract') {
-        display = parseInt(input1) - parseInt(input2);
+        display = parseFloat(input1) - parseFloat(input2);
     } else if (operator === 'multiply') {
-        display = parseInt(input1) * parseInt(input2);
+        display = parseFloat(input1) * parseFloat(input2);
     } else if (operator === 'divide') {
-        display = parseInt(input1) / parseInt(input2);
+        display = parseFloat(input1) / parseFloat(input2);
     } 
 
     updateDisplay();
